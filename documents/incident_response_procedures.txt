@@ -1,0 +1,141 @@
+DOCUMENT: Security Incident Response Procedures
+ORGANIZATION: Defense Information Systems Division
+EFFECTIVE DATE: February 20, 2025
+CLASSIFICATION: UNCLASSIFIED // FOR OFFICIAL USE ONLY
+
+1. PURPOSE
+
+This document establishes the procedures for identifying, reporting, and
+responding to security incidents involving classified information, controlled
+unclassified information (CUI), and information systems within the Defense
+Information Systems Division (DISD).
+
+2. DEFINITIONS
+
+2.1 Security Incident — Any event that involves the actual or possible
+compromise, loss, or unauthorized disclosure of classified information or CUI.
+
+2.2 Data Breach — Unauthorized access to, or disclosure of, personally
+identifiable information (PII) or other protected data.
+
+2.3 Cyber Incident — An action taken through the use of computer networks
+that results in a compromise or an effect on an information system or the
+information residing therein.
+
+2.4 Spillage — The transfer of classified information to an information
+system not accredited for that classification level.
+
+3. INCIDENT CATEGORIES
+
+3.1 Category 1 — CRITICAL
+Confirmed compromise of TOP SECRET or SCI information, or active intrusion
+on classified networks. Response time: IMMEDIATE (within 15 minutes).
+
+3.2 Category 2 — HIGH
+Confirmed compromise of SECRET information, confirmed data breach affecting
+more than 1000 records, or successful intrusion on unclassified networks.
+Response time: within 1 hour.
+
+3.3 Category 3 — MODERATE
+Compromise of CONFIDENTIAL information, spillage from classified to
+unclassified systems, loss of removable media containing classified data,
+or suspected but unconfirmed intrusion. Response time: within 4 hours.
+
+3.4 Category 4 — LOW
+Policy violations with no confirmed compromise, unsuccessful intrusion
+attempts, loss of CUI, or minor procedural deviations. Response time:
+within 24 hours.
+
+4. REPORTING PROCEDURES
+
+4.1 Initial Discovery
+Upon discovering or suspecting a security incident, any individual must:
+    a) Stop the activity that may be causing or worsening the incident
+    b) Do NOT attempt to assess the scope or remediate independently
+    c) Preserve all evidence — do not power off systems, delete files, or
+       disconnect network cables unless directed by security personnel
+    d) Immediately notify their supervisor and the Information System
+       Security Officer (ISSO)
+
+4.2 ISSO Responsibilities
+Upon receiving an incident report, the ISSO must:
+    a) Assign an incident category based on Section 3
+    b) Notify the Information System Security Manager (ISSM)
+    c) For Category 1 or 2 incidents, immediately notify the Division Chief
+       and the servicing counterintelligence office
+    d) Initiate an incident log documenting all actions taken
+    e) Activate the Incident Response Team (IRT) if warranted
+
+4.3 External Notifications
+    a) All cyber incidents must be reported to US-CERT within 1 hour of
+       determination for Category 1 incidents, and within 72 hours for
+       all other categories
+    b) Data breaches involving PII must be reported to the Privacy Office
+       within 24 hours
+    c) Compromises of classified information must be reported to the
+       cognizant Original Classification Authority (OCA)
+
+5. INCIDENT RESPONSE PROCEDURES
+
+5.1 Containment
+    a) Isolate affected systems from the network if active compromise is
+       suspected — do this by physically disconnecting the network cable,
+       NOT by powering off the system
+    b) Revoke credentials of compromised accounts
+    c) Block identified malicious IP addresses at the network perimeter
+    d) Quarantine affected removable media
+
+5.2 Assessment
+    a) The IRT will conduct a preliminary damage assessment within 24 hours
+    b) Determine the scope: what data was exposed, how many systems affected,
+       what classification level was involved
+    c) Identify the attack vector or cause of the incident
+    d) Preserve forensic evidence following chain-of-custody procedures
+
+5.3 Remediation
+    a) Reimage affected systems if malware was involved
+    b) Patch vulnerabilities that were exploited
+    c) Reset all credentials that may have been compromised
+    d) For spillage: sanitize the contaminated system in accordance with
+       NSA/CSS EPL-02-001 procedures or arrange for system destruction
+    e) Conduct a review of access controls to prevent recurrence
+
+5.4 Recovery
+    a) Restore affected systems from clean backups after verification
+    b) Reconnect systems to the network only after IRT clearance
+    c) Monitor recovered systems for 30 days for signs of residual compromise
+    d) Restore user access incrementally with enhanced monitoring
+
+6. DATA BREACH SPECIFIC PROCEDURES
+
+6.1 Upon confirmation of a data breach involving PII:
+    a) Determine the number of individuals affected
+    b) Identify the specific data elements exposed (SSN, financial data, etc.)
+    c) Assess the risk of harm to affected individuals
+    d) Prepare notification letters in coordination with the Privacy Office
+    e) Offer credit monitoring services when SSNs or financial data are exposed
+    f) Report to Congress if more than 10,000 individuals are affected
+
+7. POST-INCIDENT ACTIVITIES
+
+7.1 After-Action Report
+An after-action report must be completed within 30 days of incident closure.
+The report must include:
+    a) Timeline of events
+    b) Root cause analysis
+    c) Effectiveness of the response
+    d) Lessons learned
+    e) Recommended corrective actions
+
+7.2 Corrective Actions
+    a) All corrective actions must be assigned to responsible parties with
+       completion deadlines
+    b) The ISSM must track corrective actions to completion
+    c) Systemic issues must be elevated to the Division Chief for resource
+       allocation
+
+7.3 Training Updates
+    a) Incident response procedures must be updated based on lessons learned
+    b) Personnel must be retrained on updated procedures within 60 days
+    c) Tabletop exercises incorporating the new scenario must be conducted
+       within 90 days

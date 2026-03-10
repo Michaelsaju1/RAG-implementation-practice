@@ -1,0 +1,87 @@
+DOCUMENT: Data Classification Policy
+ORGANIZATION: Defense Information Systems Division
+EFFECTIVE DATE: January 15, 2025
+CLASSIFICATION: UNCLASSIFIED // FOR OFFICIAL USE ONLY
+
+1. PURPOSE
+
+This policy establishes the data classification framework for all information
+handled by the Defense Information Systems Division (DISD). All personnel must
+understand and apply these classification levels to protect national security
+information appropriately.
+
+2. CLASSIFICATION LEVELS
+
+2.1 UNCLASSIFIED
+Information that has been reviewed and determined not to require protection
+against unauthorized disclosure. Unclassified information may still be subject
+to access controls under other policies (e.g., Privacy Act, FOUO).
+
+2.2 CONTROLLED UNCLASSIFIED INFORMATION (CUI)
+Unclassified information that requires safeguarding or dissemination controls
+pursuant to law, regulation, or government-wide policy. CUI replaces the
+former FOUO, SBU, and LES markings.
+
+2.3 CONFIDENTIAL
+Information whose unauthorized disclosure could reasonably be expected to cause
+DAMAGE to national security. Examples include technical specifications for
+non-critical defense systems, routine diplomatic communications, and
+operational planning data for non-sensitive exercises.
+
+2.4 SECRET
+Information whose unauthorized disclosure could reasonably be expected to cause
+SERIOUS DAMAGE to national security. Examples include detailed intelligence
+reports, weapons system performance parameters, war planning documents, and
+critical infrastructure vulnerability assessments.
+
+2.5 TOP SECRET
+Information whose unauthorized disclosure could reasonably be expected to cause
+EXCEPTIONALLY GRAVE DAMAGE to national security. Examples include strategic
+nuclear operations plans, human intelligence source identities, and advanced
+cryptographic algorithms used in national defense.
+
+3. MARKING REQUIREMENTS
+
+3.1 All documents must display the overall classification level in the header
+and footer of every page.
+
+3.2 Portion markings are required for CONFIDENTIAL and above. Each paragraph,
+figure, table, and appendix must be individually marked with its classification
+level using standard abbreviations: (U), (CUI), (C), (S), (TS).
+
+3.3 Derivative classification decisions must reference the source material's
+classification guide or the original classification authority.
+
+4. HANDLING REQUIREMENTS
+
+4.1 UNCLASSIFIED and CUI information may be stored on authorized government
+information systems that meet NIST SP 800-171 requirements.
+
+4.2 CONFIDENTIAL information must be stored in GSA-approved security containers
+when not in use and processed only on systems accredited at the CONFIDENTIAL
+level or higher.
+
+4.3 SECRET information must be stored in GSA-approved security containers with
+supplemental controls. Access requires a valid SECRET clearance and a
+demonstrated need-to-know. SECRET materials must be processed on SIPRNet or
+equivalent accredited networks.
+
+4.4 TOP SECRET information must be stored in approved vaults or secure
+compartmented information facilities (SCIFs). Access requires a valid TOP
+SECRET clearance and specific access approval. TOP SECRET materials must be
+processed on JWICS or equivalent accredited networks.
+
+5. DECLASSIFICATION
+
+5.1 All classified documents must include a declassification date or event,
+not to exceed 25 years from the date of original classification unless the
+information falls under specific exemption categories.
+
+5.2 Automatic declassification reviews are conducted at the 25-year mark in
+accordance with Executive Order 13526.
+
+6. PENALTIES
+
+Unauthorized disclosure of classified information may result in administrative
+sanctions, loss of security clearance, criminal prosecution, or all of the
+above, depending on the severity and circumstances of the disclosure.

@@ -1,0 +1,124 @@
+DOCUMENT: Personnel Security and Training Requirements
+ORGANIZATION: Defense Information Systems Division
+EFFECTIVE DATE: January 30, 2025
+CLASSIFICATION: UNCLASSIFIED // FOR OFFICIAL USE ONLY
+
+1. PURPOSE
+
+This document establishes the security training and personnel vetting
+requirements for all individuals who access Defense Information Systems
+Division (DISD) information, facilities, or systems.
+
+2. CLEARANCE REQUIREMENTS
+
+2.1 All personnel must hold an active security clearance appropriate to the
+highest level of classified information they will access.
+
+2.2 Clearance levels and investigation requirements:
+    a) CONFIDENTIAL — requires a National Agency Check with Law and Credit
+       (NACLC) investigation, reinvestigated every 15 years.
+    b) SECRET — requires a Tier 3 (T3) investigation, reinvestigated every
+       10 years.
+    c) TOP SECRET — requires a Tier 5 (T5) Single Scope Background
+       Investigation (SSBI), reinvestigated every 5 years via continuous
+       evaluation or periodic reinvestigation.
+
+2.3 Access to Sensitive Compartmented Information (SCI) requires TOP SECRET
+clearance plus additional approval from the cognizant Special Security Officer
+(SSO) and indoctrination into the specific compartment.
+
+3. MANDATORY TRAINING
+
+3.1 Initial Security Orientation
+All personnel must complete an initial security orientation within 5 business
+days of being granted access to DISD facilities or systems. This orientation
+covers:
+    a) Classification levels and handling procedures
+    b) Physical security requirements
+    c) Information system security basics
+    d) Reporting obligations
+    e) Penalties for security violations
+
+3.2 Annual Security Refresher Training
+All cleared personnel must complete annual security refresher training. This
+training must be completed by September 30 of each fiscal year. Topics include:
+    a) Updates to security policies and procedures
+    b) Current threat briefings
+    c) Social engineering awareness
+    d) Insider threat indicators
+    e) Foreign travel reporting requirements
+
+3.3 Classified Information Handling Training
+Personnel who create, process, or transmit classified information must
+complete a 4-hour classified information handling course before being
+authorized to handle classified material independently. Topics include:
+    a) Proper marking and portion marking
+    b) Storage and access control requirements
+    c) Transmission procedures for each classification level
+    d) Destruction and sanitization procedures
+    e) Derivative classification responsibilities
+
+3.4 Cyber Awareness Training
+All personnel with access to DISD information systems must complete the
+DoD Cyber Awareness Challenge annually. Additionally, personnel in IT
+security roles must complete:
+    a) Role-based cybersecurity training (40 hours annually)
+    b) Incident response procedures training (quarterly)
+    c) Vulnerability assessment methodology (annually)
+
+3.5 Insider Threat Awareness Training
+All personnel must complete insider threat awareness training within 30 days
+of initial access and annually thereafter. This training covers:
+    a) Recognizing potential insider threat indicators
+    b) Reporting procedures for concerning behavior
+    c) The role of user activity monitoring
+    d) Case studies of actual insider threat incidents
+
+3.6 Removable Media Awareness Training
+All personnel must complete removable media awareness training annually.
+See the Removable Media and Portable Device Policy for details.
+
+4. SPECIAL ACCESS TRAINING
+
+4.1 Personnel accessing SCI must complete SCI indoctrination training specific
+to each compartment they are read into.
+
+4.2 Personnel serving as Original Classification Authorities (OCAs) must
+complete OCA training before exercising classification authority and every
+year thereafter.
+
+4.3 Personnel responsible for derivative classification must complete
+derivative classification training before performing derivative classification
+and every two years thereafter.
+
+5. FOREIGN TRAVEL
+
+5.1 All cleared personnel must report planned foreign travel to their Security
+Manager at least 30 days in advance.
+
+5.2 A foreign travel security briefing is required before departure and a
+debriefing is required within 5 business days of return.
+
+5.3 Personnel with TOP SECRET/SCI access may be subject to additional travel
+restrictions and must obtain approval from the SSO.
+
+6. CONTINUOUS EVALUATION
+
+6.1 All cleared personnel are subject to continuous evaluation (CE), which
+may include automated checks of criminal records, financial records, and
+public records.
+
+6.2 Personnel must self-report life events that may affect their clearance
+eligibility, including but not limited to: arrests, financial difficulties,
+foreign contacts, mental health treatment, and substance abuse issues.
+
+7. TRAINING RECORDS
+
+7.1 All training completions must be documented in the Security Training
+Management System (STMS).
+
+7.2 Supervisors are responsible for ensuring their personnel complete all
+required training by the established deadlines.
+
+7.3 Failure to complete mandatory training by the deadline will result in
+suspension of system access until training is completed.

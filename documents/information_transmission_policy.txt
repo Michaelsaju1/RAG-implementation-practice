@@ -1,0 +1,102 @@
+DOCUMENT: Classified Information Transmission Policy
+ORGANIZATION: Defense Information Systems Division
+EFFECTIVE DATE: February 10, 2025
+CLASSIFICATION: UNCLASSIFIED // FOR OFFICIAL USE ONLY
+
+1. PURPOSE
+
+This policy establishes procedures for the secure transmission of classified
+and controlled unclassified information (CUI) within and between Defense
+Information Systems Division (DISD) facilities.
+
+2. ELECTRONIC TRANSMISSION
+
+2.1 UNCLASSIFIED / CUI
+CUI may be transmitted via government email systems that employ TLS 1.2 or
+higher encryption. When transmitting CUI externally, it must be encrypted
+using a FIPS 140-2 validated module. Approved methods include S/MIME encrypted
+email or transfer via approved secure file sharing platforms.
+
+2.2 CONFIDENTIAL
+CONFIDENTIAL information may be transmitted electronically only over networks
+accredited at the CONFIDENTIAL level or higher (e.g., SIPRNet). Transmission
+over unclassified networks is prohibited unless the data is encrypted using
+NSA-approved Type 1 encryption.
+
+2.3 SECRET
+SECRET information must be transmitted electronically only via SIPRNet or
+other networks accredited at the SECRET level or higher. The use of
+NSA-approved Type 1 encryption is required for all SECRET transmissions that
+traverse any network segment not fully accredited at the SECRET level.
+
+2.4 TOP SECRET
+TOP SECRET information must be transmitted electronically only via JWICS or
+other networks accredited at the TOP SECRET level. No exceptions are permitted
+for transmission over lower-accredited networks, regardless of encryption.
+
+3. PHYSICAL TRANSMISSION
+
+3.1 CONFIDENTIAL Material
+CONFIDENTIAL material may be transmitted via:
+    a) U.S. Postal Service Registered Mail (within CONUS)
+    b) Authorized government courier
+    c) Approved commercial carrier with chain-of-custody tracking
+
+Material must be double-wrapped. The inner wrapper must be sealed, marked with
+the classification level, and addressed to the intended recipient by name and
+office. The outer wrapper must be unmarked and show no indication of classified
+contents.
+
+3.2 SECRET Material
+SECRET material may be transmitted via:
+    a) Defense Courier Service (DCS)
+    b) Authorized government courier with SECRET clearance
+    c) U.S. Postal Service Registered Mail (CONUS only, First Class)
+
+The same double-wrapping procedures as CONFIDENTIAL apply. Additionally, a
+receipt acknowledgment is required — the sender must receive confirmation of
+delivery within 48 hours.
+
+3.3 TOP SECRET Material
+TOP SECRET material may only be transmitted via:
+    a) Defense Courier Service (DCS)
+    b) Specifically designated TOP SECRET courier with signed courier orders
+
+Hand-to-hand transfer with signed receipt is required. Material must remain
+under continuous positive control of a cleared individual at all times during
+transit. TOP SECRET material may NOT be transmitted via U.S. mail under any
+circumstances.
+
+4. FACSIMILE (FAX) TRANSMISSION
+
+4.1 STU-III or STE secure telephones with fax capability may be used for
+transmitting information up to the SECRET level when both sending and
+receiving terminals are secured.
+
+4.2 TOP SECRET information may not be transmitted by facsimile.
+
+4.3 All fax transmissions of classified material must be preceded by a test
+page and confirmed by telephone with the receiving party.
+
+5. VERBAL TRANSMISSION
+
+5.1 Classified discussions must occur only in approved spaces — SCIFs for TOP
+SECRET, and secured conference rooms certified for the appropriate level for
+CONFIDENTIAL and SECRET.
+
+5.2 The use of STU-III/STE secure telephones is authorized for classified
+voice communications up to the level for which the equipment is keyed.
+
+5.3 Discussion of classified information on unsecured telephones, cellular
+phones, or in public spaces is strictly PROHIBITED.
+
+6. ACCOUNTABILITY
+
+6.1 All transmissions of SECRET and TOP SECRET information must be logged in
+the division's classified material accountability system.
+
+6.2 Receipts for TOP SECRET transmissions must be retained for five years.
+Receipts for SECRET transmissions must be retained for two years.
+
+6.3 Failure to obtain delivery confirmation within the required timeframe
+must be reported as a potential security incident.

@@ -1,0 +1,82 @@
+DOCUMENT: Removable Media and Portable Device Policy
+ORGANIZATION: Defense Information Systems Division
+EFFECTIVE DATE: March 1, 2025
+CLASSIFICATION: UNCLASSIFIED // FOR OFFICIAL USE ONLY
+
+1. PURPOSE
+
+This policy governs the use of removable media and portable electronic devices
+within Defense Information Systems Division (DISD) facilities and on DISD
+information systems. The improper use of removable media represents one of the
+most significant vectors for data exfiltration and malware introduction.
+
+2. SCOPE
+
+This policy applies to all removable media including but not limited to:
+USB flash drives, external hard drives, SD cards, optical discs (CD/DVD/Blu-ray),
+magnetic tapes, and any device capable of storing or transferring digital data.
+
+3. GENERAL PROHIBITIONS
+
+3.1 The use of personally owned removable media on any government information
+system is strictly PROHIBITED.
+
+3.2 The connection of any removable media to classified networks (SIPRNet,
+JWICS) is PROHIBITED unless explicitly authorized by the Information System
+Security Manager (ISSM) and documented in the system's security plan.
+
+3.3 Removable media used on classified systems must never be connected to
+unclassified systems. Cross-domain transfer of data requires use of approved
+cross-domain solutions and formal authorization.
+
+4. AUTHORIZED USE
+
+4.1 Government-furnished removable media may be used on unclassified networks
+for legitimate business purposes with supervisor approval.
+
+4.2 Use of removable media on classified systems requires:
+    a) Written approval from the ISSM
+    b) Media must be government-furnished and pre-scanned
+    c) Media must be marked with the highest classification level of data
+       it has ever contained
+    d) All transfers must be logged in the media accountability system
+    e) Media must be stored in an approved security container when not in use
+
+4.3 Authorized removable media must be encrypted using FIPS 140-2 validated
+encryption modules for any data classified as CUI or above.
+
+5. MEDIA SANITIZATION AND DESTRUCTION
+
+5.1 Removable media that has contained UNCLASSIFIED or CUI data may be
+sanitized using NIST SP 800-88 guidelines and reused.
+
+5.2 Removable media that has contained CONFIDENTIAL or SECRET data must be
+degaussed (for magnetic media) or physically destroyed using approved methods.
+Sanitization alone is not sufficient.
+
+5.3 Removable media that has contained TOP SECRET data must be physically
+destroyed by pulverizing, incinerating, or shredding to particles no larger
+than 2mm. Destruction must be witnessed by two authorized individuals and
+documented on a destruction certificate.
+
+5.4 All destruction activities must be logged and reported to the security
+office within 24 hours.
+
+6. INCIDENT REPORTING
+
+6.1 Any unauthorized use of removable media must be reported to the Information
+System Security Officer (ISSO) within one hour of discovery.
+
+6.2 Loss or theft of removable media that has contained classified information
+constitutes a security incident and must be reported immediately through the
+chain of command and to the servicing counterintelligence office.
+
+6.3 Discovery of unapproved removable media connected to any system must be
+treated as a potential compromise. The device must not be removed — the ISSO
+must be contacted to coordinate forensic analysis.
+
+7. TRAINING
+
+All personnel with access to DISD information systems must complete removable
+media awareness training annually. This training covers proper handling,
+labeling, storage, and destruction procedures.
