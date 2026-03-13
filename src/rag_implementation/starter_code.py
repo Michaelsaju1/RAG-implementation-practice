@@ -10,6 +10,14 @@ Start with Part 1 and work your way down.
 import os
 from dotenv import load_dotenv
 import glob
+from langchain_community.document_loaders import DirectoryLoader, TextLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_core.vectorstores import InMemoryVectorStore
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
 
 load_dotenv()
 
@@ -27,7 +35,7 @@ def load_documents(directory: str = "documents"):
     Hints:
         - Look at langchain_community.document_loaders
         - DirectoryLoader or TextLoader are good options
-    """ 
+     
     file_paths = glob.glob(os.path.join(directory, "*.txt"))
     print(file_paths)
 
@@ -37,7 +45,10 @@ def load_documents(directory: str = "documents"):
             content = file.read()
             documents.append(content)
     print(f"loaded {len(documents)} files.")
-
+    """
+    loader = DirectoryLoader(directory, glob="*.txt", loader_cls=TextLoader)
+    documents = loader.load()
+    return documents
 
 
 def split_documents(documents, chunk_size=1000, chunk_overlap=200):
@@ -56,8 +67,10 @@ def split_documents(documents, chunk_size=1000, chunk_overlap=200):
         - Look at langchain.text_splitter
         - RecursiveCharacterTextSplitter is a solid default
     """
-    # YOUR CODE HERE
-    pass
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    chunks = text_splitter.split_documents(documents)
+    print(f"Split blog post into {len(chunks)} sub-documents.")
+    return chunks
 
 
 def create_vector_store(chunks):
@@ -74,8 +87,11 @@ def create_vector_store(chunks):
         - You need an embedding model (OpenAIEmbeddings, or a free alternative)
         - Chroma is a good local vector store choice
     """
-    # YOUR CODE HERE
-    pass
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+    #print(embeddings)
+    vector_store = InMemoryVectorStore(embeddings)
+    vector_store.add_documents(documents=chunks)
+    return vector_store
 
 
 def retrieve(vector_store, query: str, k: int = 4):
@@ -93,8 +109,9 @@ def retrieve(vector_store, query: str, k: int = 4):
     Hints:
         - Most vector stores have a .similarity_search() method
     """
-    # YOUR CODE HERE
-    pass
+    retrieved_docs = vector_store.similarity_search(query, k)
+    serialized = "\n\n".join((f"Source: {doc.metadata}\nContent: {doc.page_content}") for doc in retrieved_docs)
+    return serialized, retrieved_docs
 
 
 def generate_answer(question: str, context_docs):
@@ -113,8 +130,20 @@ def generate_answer(question: str, context_docs):
         - Use ChatOpenAI or another LangChain LLM wrapper
         - A simple prompt: "Answer the question based on the context"
     """
-    # YOUR CODE HERE
-    pass
+    context = "\n\n".join(doc.page_content for doc in context_docs)
+
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+
+    prompt = ChatPromptTemplate.from_messages([
+        ("system", "Answer the question based only on the provided context."),
+        ("human", "Context:\n{context}\n\nQuestion: {question}"),
+    ])
+
+    chain = prompt | llm | StrOutputParser()
+    answer = chain.invoke({"context": context, "question": question})
+    return answer
+
+
 
 
 # ──────────────────────────────────────────────
@@ -238,7 +267,7 @@ if __name__ == "__main__":
     # Quick test
     test_question = "What are the data classification levels?"
     print(f"\nTest question: {test_question}")
-    relevant_docs = retrieve(store, test_question)
+    serialized, relevant_docs = retrieve(store, test_question)
     answer = generate_answer(test_question, relevant_docs)
     print(f"Answer: {answer}")
 
